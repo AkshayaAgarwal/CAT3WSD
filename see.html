@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All transactions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>INFOSYS SPRING DATABASE</h2>
+    <div ng-controller="MyController">
+        <section id="tableSection" class="container mt-5">
+            <table class="table table-light striped">
+                <thead>
+                    <tr class="tr-dark">
+                        <th scope="col">EMP_ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Designation</th>
+                        <th scope="col">Department</th>
+                        <th scope="col">Salary</th>
+                        <th scope="col">Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="data in datas">
+                        <td scope="row">{{data.empid}}</td>
+                        <td>{{data.empname}}</td>
+                        <td>{{data.empdes}}</td>
+                        <td>{{data.empdepart}}</td>
+                        <td>{{data.empsal}}</td>
+                        <td>{{data.emploc}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+
+</html>

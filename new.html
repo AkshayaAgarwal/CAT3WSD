@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+</head>
+
+<body>
+    <h2>INFOSYS SPRING NEW USER PAGE</h2>
+    <br> <br>
+    <div class="container bg-dark text-light p-5 rounded">
+        <form ng-submit="createEntry()">
+            <div class="mt-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="empid" class="form-label">Emp_Id</label>
+                        <input type="text" ng-model="empid" class="form-control" required>
+                    </div>
+                    <div class="offset-md-1 col-md-7">
+                        <label for="empname" class="form-label">Name</label>
+                        <input type="text" ng-model="empname" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="empdes" class="form-label">Designation</label>
+                        <input type="text" ng-model="empdes" class="form-control" required>
+                    </div>
+                    <div class="offset-md-1 col-md-7">
+                        <label for="empdepart" class="form-label">Department</label>
+                        <input type="text" ng-model="empdepart" class="form-control" required>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="empsal" class="form-label">Salary</label>
+                        <input type="numbers" ng-model="empsal" class="form-control" required>
+                    </div>
+                    <div class="offset-md-1 col-md-7">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Location</label>
+                            <select class="form-select form-select-lg" ng-model="emploc" id="" required>
+                                <option selected disabled value="">Select one</option>
+                                <option value="LUCKNOW">LUCKNOW</option>
+                                <option value="MUMBAI">MUMBAI</option>
+                                <option value="CHENNAI">CHENNAI</option>
+                                <option value="KOLKATA">KOLKATA</option>
+                                <option value="DELHI">DELHI</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 d-flex justify-content-center">
+                <input type="submit" value="Create" class="btn btn-success px-5 py-3">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
